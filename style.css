@@ -1,0 +1,46 @@
+.parent {
+    height:500px;
+    width: 350px;
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns:auto auto auto ;
+    grid-template-rows: 40% 10% 15% 20% 15%;
+    grid-template-areas: 
+    "head head head"
+    "title title title"
+    "brag brag brag"
+    "log1 log2 log3 "
+    ". btn ." 
+    ;
+}
+.red {
+grid-area: head ;
+}
+.blue {
+grid-area: title;
+grid-column: 1/4;
+text-align:center;
+border-bottom:  1px solid rgb(75, 73, 73) ;
+margin:0 25px ;
+}
+.green {
+grid-area: brag;
+font-size:medium;
+text-align: center;
+}
+.logo1 {
+grid-area: log1;
+background-color: red;
+}
+.logo2 {
+grid-area: log2;
+}
+.logo3 {
+grid-area: log3;
+background-color: black;
+}
+.black {
+grid-area: btn;
+background-color: blueviolet;
+}
+
